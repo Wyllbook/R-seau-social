@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAL</title>
+   
+    <link rel="stylesheet" href="./wal.css" media="all">
+  
+    <script type="text/javascript" src="http://theem.bl.ee/chat/chat.js"></script>
+    <link rel="icon"  href="https://i.dlpng.com/static/png/5632545_thumb.png">
+</head>
+<body>
+    <form action="">
+        <div class="pseudo-container">
+            <label for="pseudo">Pseudo</label>
+            <input type="text" autocomplete="off" id ="pseudo">
+            <span></span>
+        </div>
+
+
+        <div class="email-container">
+            <label for="email">Email</label>
+            <input type="text" autocomplete="off" id ="email">
+            <span>Email incorrect</span>
+        </div>
+
+
+        <div class="password-container">
+            <label for="password"> Mot de passe</label>
+            <input type="password" autocomplete="off" id ="password" required>
+            <p id ="progress-bar"></p>
+            <span></span>
+
+        </div>
+        <input type="submit" value="Valider">
+    </form>
+    <div class="activation-container">
+
+        <label for="activation">Veuillez renseignez votre code d'activation</label>
+    
+    <input type="text" autocomplete="'off" id="activation" placeholder="">
+    <button id="button" >Valider</button></div>
+
+    <div id="activity">
+        <div id="header" class="tal round">
+            
+            <div id="title"> WAT</div>
+        </div>
+        <div id="contents">
+            <div id="contacts" class="round">
+                <div id="cts_header" class="tal round">Liste contacts</div>
+                <input type="submit"  id="plus"  value="+">
+                <table >
+                    <td class="cts round" >
+                    <img src="https://pngimage.net/wp-content/uploads/2018/06/profil-png-5.png" draggable="false"> 
+                    
+                </td>
+            </table>
+            </div>
+            <div id="main" class="round">
+                <div id="discussion">
+                
+                </div>
+                <div id="commands" class="round">
+                    <input type="text" name="msg" placeholder="Taper un message" onkeydown="search(this);" autocomplete="off" id="write_msg" class="round" >
+                    <div  id="send_msg" class="tal circ">Envoyer</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./wal.js"></script>
+</body>
+</html>
